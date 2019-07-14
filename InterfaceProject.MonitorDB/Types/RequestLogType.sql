@@ -1,0 +1,15 @@
+﻿CREATE TYPE RequestLogType AS TABLE
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), 
+    [Name] NVARCHAR(200) NOT NULL, 
+	[RequestUrl] VARCHAR(1000) NOT NULL,
+	[RequestMethod] VARCHAR(10) NOT NULL,
+    [RequestMsg] NTEXT NOT NULL, 
+    [ResponseMsg] NTEXT NULL, 
+    [ExceptionMsg] NTEXT NULL, 
+	[ReferenceId] UNIQUEIDENTIFIER NULL,
+	[ReferenceTable] VARCHAR(200) NULL,
+    [Level] VARCHAR(10) NOT NULL, 
+    [Version] VARCHAR(20) NOT NULL, 
+    [CreateTime] DATETIME NOT NULL
+)

@@ -1,0 +1,139 @@
+﻿.body-full-height {
+    height: 100%;
+}
+.body-full-height body {
+    height: 100%;
+}
+.login-container {
+    float: left;
+    width: 100%;
+    min-height: 100%;
+    background-color: #33414e;
+}
+.login-body .form-control {
+    border: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    color: #CCC;
+    line-height: 20px;
+    height: auto;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    font-size: 14px;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+.login-container a{
+    color:#fff;
+}
+.login-container h2 {
+    color: #fff;
+    text-align:center;
+}
+.login-container a:hover {
+    color: #fff;
+}
+.login-container .login-box {
+    width: 400px;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+.login-logo {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.login-body {
+    width: 100%;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.login-title {
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.login-footer {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    color: #FFF;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-moz-keyframes fadeInDown /* Firefox */
+{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-webkit-keyframes fadeInDown /* Safari 和 Chrome */
+{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@-o-keyframes fadeInDown /* Opera */
+{
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown
+}
+.animated {
+    -webkit-animation-duration: 200ms;
+    animation-duration: 200ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

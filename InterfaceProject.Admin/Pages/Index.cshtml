@@ -1,0 +1,149 @@
+﻿@page
+@model InterfaceProject.Admin.Pages.IndexModel
+@{
+    ViewData["Title"] = "首页";
+}
+@section Styles{ 
+    <link rel="stylesheet" href="~/css/home.css" />
+}
+@*导航栏*@
+<nav class="navbar navbar-default">
+    <section class="container">
+        @*商业logo*@
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">切换导航菜单</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                @*<img alt="Brand" src="...">*@
+                互联接口服务
+            </a>
+        </div>
+        @*导航链接*@
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="glyphicon  glyphicon-user"></i>&nbsp;&nbsp;立即注册</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon  glyphicon-globe"></i>&nbsp;&nbsp;简体中文 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </section>
+</nav>
+@*宣传图和登录*@
+<div class="jumbotron" style="background-color:#808080">
+    <section class="container">
+        <div class="panel panel-default pull-right" style="width:270px">
+            <div class="panel-body">
+                <h4>登录</h4>
+                <form action="/" method="post">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="loginId">邮箱/手机号</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon  glyphicon-user"></i></div>
+                                <input type="email" class="form-control" id="loginId" placeholder="邮箱/手机号">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="loginPsd">密码</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="glyphicon  glyphicon-lock"></i></div>
+                                <input type="password" class="form-control" id="loginPsd" placeholder="密码">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-inline margin-topbottom">
+                        <div class="checkbox">
+                            <label>
+                                <input name="remember" type="checkbox" value="true" /> 记住账号
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success" style="width:100px">登录</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    @*系统公告*@
+    <section class="border-solid" style="padding-top:0">
+        <div class="row"><h3 class="col-xs-6">系统公告</h3><p class="col-xs-6 text-right" style="line-height:1.1;margin-top: 20px;"><a href="#">了解更多&nbsp;&nbsp;<i class="glyphicon glyphicon-menu-right"></i></a></p></div>
+        <ul style="list-style-type:decimal">
+            <li>系统上线微信消息处理功能</li>
+            <li>系统提供天气、有趣笑话、资讯等消息订阅功能</li>
+        </ul>
+    </section>
+    @*基本功能展示模块*@
+    <section class="power-show">
+        <div><h3>功能展示</h3></div>
+        <div style="overflow:hidden;margin:0 -15px">
+            <div class="col-md-4 margin-topbottom">
+                <div class="border-solid">
+                    <h4>天气服务</h4>
+                    <p><label>温度：</label><span>26 ℃</span></p>
+                    <p><label>天气：</label><span>晴朗</span></p>
+                    <p><label>发布时间：</label><span>14：48发布</span></p>
+                </div>
+            </div>
+            <div class="col-md-4 margin-topbottom">
+                <div class="border-solid">
+                    <h4>有趣笑话</h4>
+                    <p>一天晚上睡觉，小宝宝睡在我和她爸爸中间，半夜宝宝醒来，摸了摸我的胸，嘴里说是爸爸。然后她翻了身，又摸了她爸爸的胸，说道还是爸爸。。。。</p>
+                    <p>做客车到站下车，有好多小三轮，一个大妈问我：“坐三轮不？”    我看了她一眼，没说话。    “小伙子，你去哪啊？”    我寻思咋这烦人呢，“出国！”    大妈楞了一下，“那我拉你去机场吧，快上车。。。”    我。。。</p>
+                    <p>&nbsp;给你看看神马叫人才，同事儿子在学校一学期赚了四千块 ……学校是封闭式学校，他就叫校外的朋友带了一条七块钱一包的烟，在学校卖一块钱一支。</p>
+                </div>
+            </div>
+            <div class="col-md-4 margin-topbottom">
+                <div class="border-solid">
+                    <h4>有趣笑话</h4>
+                    <p>一天晚上睡觉，小宝宝睡在我和她爸爸中间，半夜宝宝醒来，摸了摸我的胸，嘴里说是爸爸。然后她翻了身，又摸了她爸爸的胸，说道还是爸爸。。。。</p>
+                    <p>做客车到站下车，有好多小三轮，一个大妈问我：“坐三轮不？”    我看了她一眼，没说话。    “小伙子，你去哪啊？”    我寻思咋这烦人呢，“出国！”    大妈楞了一下，“那我拉你去机场吧，快上车。。。”    我。。。</p>
+                    <p>&nbsp;给你看看神马叫人才，同事儿子在学校一学期赚了四千块 ……学校是封闭式学校，他就叫校外的朋友带了一条七块钱一包的烟，在学校卖一块钱一支。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    @*版权声明*@
+    <p class="link-group">
+        <a href="#" class="a-link" target="_blank">关于互联接口服务</a><span>|</span>
+        <a href="#" class="a-link" target="_blank">服务协议</a><span>|</span>
+        <a href="#" class="a-link" target="_blank">联系客服</a><span>|</span>
+        <a href="#" class="a-link" target="_blank">网站备案</a>
+    </p>
+    <hr />
+    <footer>
+        <p>Copyright &copy; 2017-@DateTime.Now.Year 互联接口服务，版权所有。-- InterfaceProject. All Rights Reserved.</p>
+    </footer>
+</div>

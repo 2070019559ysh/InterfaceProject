@@ -1,0 +1,31 @@
+## Include .dll files in packages folder
+
+# User-specific files
+
+!*.dll
+
+!*.pdb
+
+# ignore files
+
+*.suo
+
+*.cache
+
+*.log
+
+*/bin/
+
+*/obj/
+
+.vs/
+
+*.force
+
+*.dbmdl
+
+*.user
+
+*.jfm
+packages/
+*.pubxml

@@ -1,0 +1,51 @@
+﻿@page
+@model InterfaceProject.Admin.Pages.Entry.LoginModel
+@{
+    ViewData["Title"] = "用户登录";
+}
+@section Styles{ 
+    <link rel="stylesheet" href="~/css/Entry/login.css" />
+}
+@section Scripts{ 
+    <script type="text/javascript" src="~/js/Entry/login.js"></script>
+}
+<div class="login-container">
+
+    <div class="login-box animated fadeInDown">
+        <div class="login-logo"><h2>互联服务管理平台</h2></div>
+        <div class="login-body">
+            <div class="login-title"><strong>欢迎</strong>， 请登录</div>
+            <form action="index.html" class="form-horizontal" method="post">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="邮箱/手机号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <input type="password" class="form-control" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <a href="#" class="btn btn-link btn-block">已忘记可找回密码？</a>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="btn btn-info btn-block">登  录</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="login-footer">
+            <div class="pull-left">
+                &copy; @DateTime.Now.Year 互联接口服务
+            </div>
+            <div class="pull-right">
+                <a href="#">About</a> |
+                <a href="#">Privacy</a> |
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+</div>

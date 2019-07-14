@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HelpModel\WeChatKey.cs" />
+    <Compile Remove="HelpModel\WeixinErrorInfo.cs" />
+    <Compile Remove="LinkUp\MediaFileLinkUp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceProject.Tool\InterfaceProject.Tool.csproj" />
+  </ItemGroup>
+
+</Project>

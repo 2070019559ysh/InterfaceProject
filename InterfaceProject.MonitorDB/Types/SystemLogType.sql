@@ -1,0 +1,10 @@
+﻿CREATE TYPE SystemLogType AS TABLE
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID() , 
+    [Module] VARCHAR(200) NOT NULL, 
+    [Content] NTEXT NOT NULL, 
+    [ThreadId] INT NOT NULL, 
+    [Level] VARCHAR(10) NOT NULL, 
+    [Version] VARCHAR(20) NOT NULL, 
+    [CreateTime] DATETIME NOT NULL 
+)

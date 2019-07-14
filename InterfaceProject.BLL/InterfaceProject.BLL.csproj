@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceProject.DAL\InterfaceProject.DAL.csproj" />
+    <ProjectReference Include="..\InterfaceProject.DTO\InterfaceProject.DTO.csproj" />
+    <ProjectReference Include="..\InterfaceProject.Model\InterfaceProject.Model.csproj" />
+    <ProjectReference Include="..\InterfaceProject.Tool\InterfaceProject.Tool.csproj" />
+    <ProjectReference Include="..\InterfaceProject.WxSDK\InterfaceProject.WxSDK.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+﻿.power-show{
+    margin-top:30px;
+}
+.link-group{
+    overflow:hidden;
+    margin-top:40px;
+    margin-bottom:0px;
+}
+.a-link {
+    display: block;
+    float: left;
+}
+.a-link + span {
+    display: block;
+    float: left;
+    margin-left: 14px;
+    margin-right: 14px;
+}
